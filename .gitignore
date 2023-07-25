@@ -3,3 +3,5 @@
 *.obj
 asm6f
 test_cases/incbin/incbin.bin
+.idea
+.gitignore

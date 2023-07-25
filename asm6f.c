@@ -2205,10 +2205,8 @@ void equ(label *id, char **next) {
 			}
 		} else if(labelhere->type!=EQUATE) {
 			errmsg=LabelDefined;
-		}
-		// [dttdndn] fix for famistudio sound engine
-		else{
-			labelhere->line = my_strdup(s); // ***** MISSING ASSIGNMENT HERE *****
+		} else {
+			labelhere->line = my_strdup(s);
 		}
 		*s=0;//end line
 	}
